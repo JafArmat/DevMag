@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Photos" syncable="YES">
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Produs" inverseName="photosAray" inverseEntity="Produs" syncable="YES"/>
+    </entity>
+    <entity name="Produs" syncable="YES">
+        <attribute name="descriere" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="features" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nume" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pret" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="photosAray" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photos" inverseName="parent" inverseEntity="Photos" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Produs" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Photos" positionX="180" positionY="45" width="128" height="73"/>
+    </elements>
+</model>

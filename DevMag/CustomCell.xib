@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="109" id="qGI-AU-q7w" customClass="CustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qGI-AU-q7w" id="mqb-pq-pEX">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="108.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7rc-NB-5hs">
+                        <rect key="frame" x="13" y="16" width="93" height="77"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="UzG-NO-fzs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8U-i2-TYK">
+                        <rect key="frame" x="114" y="16" width="243" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae4-Ao-yn2">
+                        <rect key="frame" x="284" y="75" width="62.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ye6-s0-MmH">
+                        <rect key="frame" x="49" y="45" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N3-KJ-mzM">
+                        <rect key="frame" x="287" y="32" width="33" height="33"/>
+                        <state key="normal" image="FavEmpty"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pret:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11x-aT-gcC">
+                        <rect key="frame" x="114" y="75" width="77" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="hv3-u5-MNr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v8U-i2-TYK" firstAttribute="top" secondItem="mqb-pq-pEX" secondAttribute="topMargin" constant="8" id="1TE-90-wYf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="v8U-i2-TYK" secondAttribute="trailing" constant="-8" id="5se-mw-Mmp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ae4-Ao-yn2" secondAttribute="bottom" constant="7.5" id="BzO-eJ-8th"/>
+                    <constraint firstItem="11x-aT-gcC" firstAttribute="leading" secondItem="7rc-NB-5hs" secondAttribute="trailing" constant="8" id="FRI-3k-qGm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7rc-NB-5hs" secondAttribute="bottom" constant="7.5" id="Fic-23-lS2"/>
+                    <constraint firstItem="7rc-NB-5hs" firstAttribute="leading" secondItem="mqb-pq-pEX" secondAttribute="leadingMargin" constant="5" id="HQX-vE-tLX"/>
+                    <constraint firstItem="9N3-KJ-mzM" firstAttribute="top" secondItem="mqb-pq-pEX" secondAttribute="topMargin" constant="24" id="IlZ-xJ-ViU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9N3-KJ-mzM" secondAttribute="trailing" constant="28.5" id="JC2-D5-MM3"/>
+                    <constraint firstItem="ye6-s0-MmH" firstAttribute="centerX" secondItem="7rc-NB-5hs" secondAttribute="centerX" id="MHA-Lv-pSQ"/>
+                    <constraint firstItem="ye6-s0-MmH" firstAttribute="centerY" secondItem="7rc-NB-5hs" secondAttribute="centerY" id="McN-C8-waz"/>
+                    <constraint firstItem="7rc-NB-5hs" firstAttribute="top" secondItem="mqb-pq-pEX" secondAttribute="topMargin" constant="8" id="Md8-Ux-W3e"/>
+                    <constraint firstItem="v8U-i2-TYK" firstAttribute="leading" secondItem="7rc-NB-5hs" secondAttribute="trailing" constant="8" id="h1U-rG-BYB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="11x-aT-gcC" secondAttribute="bottom" constant="8" id="jIj-6W-dhM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ae4-Ao-yn2" secondAttribute="trailing" constant="43" id="VzR-B0-QP7"/>
+            </constraints>
+            <connections>
+                <outlet property="favButton" destination="9N3-KJ-mzM" id="O87-7d-68f"/>
+                <outlet property="indicatorViewCell" destination="ye6-s0-MmH" id="i9E-pu-ahh"/>
+                <outlet property="logoImgView" destination="7rc-NB-5hs" id="mA7-ho-Jvg"/>
+                <outlet property="nameLabel" destination="v8U-i2-TYK" id="LZg-lC-dVJ"/>
+                <outlet property="priceLabel" destination="11x-aT-gcC" id="ycZ-c5-fFD"/>
+                <outlet property="qntyLabel" destination="ae4-Ao-yn2" id="IXO-da-UAE"/>
+            </connections>
+            <point key="canvasLocation" x="342" y="291.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FavEmpty" width="33" height="33"/>
+        <image name="placeholder" width="500" height="500"/>
+    </resources>
+</document>
